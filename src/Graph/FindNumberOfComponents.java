@@ -16,9 +16,14 @@ public class FindNumberOfComponents {
         }
 
         // Add edges to adjacency list
-        for(int i = 0; i < E; i++){
-            adjList.get(edges.get(i).get(0)).add(edges.get(i).get(1));
-            adjList.get(edges.get(i).get(1)).add(edges.get(i).get(0));
+//        for(int i = 0; i < E; i++){
+//            adjList.get(edges.get(i).get(0)).add(edges.get(i).get(1));
+//            adjList.get(edges.get(i).get(1)).add(edges.get(i).get(0));
+//        }
+
+        for(List<Integer> edge : edges){
+            adjList.get(edge.get(0)).add(edge.get(1));
+            adjList.get(edge.get(1)).add(edge.get(0));
         }
 
         boolean[] vis = new boolean[V];
