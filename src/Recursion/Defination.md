@@ -2,7 +2,9 @@ Recursion & Backtracking Playlist
 https://www.youtube.com/playlist?list=PL9gnSGHSqcnp39cTyB1dTZ2pJ04Xmdrod
 
 Recursion
-    
+
+A function calling itself to solve a problem by breaking it down into smaller, similar subproblems.
+
 1. A function is calling itself
 2. Stack - Last in First Out
 3. While the function is not finished executing, it will remain in the stack, that is why the main function will pop out last from the stack
@@ -33,3 +35,6 @@ How to understand and approach a recursive problem
 Types of recurrence relation
 1. Liner recurrence relation -> Fibonacci series
 2. Divide & conquer recurrence relation -> binary search
+
+   Backtracking:
+   A problem-solving approach where you explore different paths, discarding those that don't meet criteria, often implemented using recursion. 
